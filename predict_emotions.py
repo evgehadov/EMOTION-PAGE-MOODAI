@@ -85,7 +85,7 @@ if __name__ == "__main__":
 
     ]
 
-    preds = predict_emotions(examples, threshold=0.5)
+    preds = predict_emotions(examples, threshold=0.25)
     for text, result in zip(examples, preds):
         print(f"\nТекст: {text}")
         print(f"Предсказанные эмоции (выше порога): {result['emotions']}")
