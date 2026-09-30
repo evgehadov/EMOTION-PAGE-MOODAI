@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Emotion Page Analyzer",
+  "version": "1.0",
+  "description": "Анализ эмоций постов на странице",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
