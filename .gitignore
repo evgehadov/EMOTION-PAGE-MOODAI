@@ -1,0 +1,7 @@
+   .venv/
+   __pycache__/
+   .idea/
+   .DS_Store
+   all_data.pkl
+   all_data_backup.pkl
+   encoder/
