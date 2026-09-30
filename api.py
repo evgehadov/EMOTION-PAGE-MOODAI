@@ -85,7 +85,7 @@ emotions_ru = {
 # ----------------------
 # ФУНКЦИИ ПРЕДСКАЗАНИЯ С ОКРУГЛЕНИЕМ
 # ----------------------
-def predict_emotions(texts, threshold=0.5):
+def predict_emotions(texts, threshold=0.25):
     embeddings = embedder.encode(texts, convert_to_tensor=True).to(device)
 
     with torch.no_grad():
